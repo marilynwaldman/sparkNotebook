@@ -10,4 +10,9 @@ USER root
 RUN conda install --quiet --yes -c conda-forge jupyter_contrib_nbextensions  \
     && conda clean -tipsy
 
+# RUN conda remove graphviz
+
+RUN conda install --quiet --yes -c  conda-forge  python-graphviz  \
+    && conda clean -tipsy
+
 
